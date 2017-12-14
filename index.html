@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Intégration</title>
+    <meta name="description" content="Test intégration">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+    <link rel="stylesheet" href="src/css/lib/bootstrap3.3.7.min.css">
+    <link rel="stylesheet" href="src/css/lib/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="src/css/location.css">
+</head>
+
+<body>
+    <header class="header__wrap">
+        <div class="header">
+            <div class="header__left">
+                <a class="header__logo" title="title" href="">Koolicar</a>
+            </div>
+            <button class="header-nav__toggle js-header-toggle-nav" type="button"><span></span>
+            </button>
+            <ul class="header-nav js-header-nav">
+                <li><a class="header-nav__link" title="title" href="">Inscription</a>
+                </li>
+                <li><a class="header-nav__link" href="">Connexion</a>
+                </li>
+                <li class="header-nav--dropdown header-nav--border header-nav--off">
+                    <a class="header-nav__link" href="">Aide</a>
+                    <ul class="header-nav__subnav header-nav__subnav--marging">
+                        <li><a class="header-nav__link" title="" href="">Comment ça marche</a>
+                        </li>
+                        <li><a class="header-nav__link" title="" href="">Tarifs</a>
+                        </li>
+                        <li><a class="header-nav__link" title="" href="">Assurance</a>
+                        </li>
+                        <li><a class="header-nav__link" title="" href="">Contactez-nous</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav--border header-nav--signup"><a class="header-nav__link header-nav__link--btn" title="" href="">Inscrire mon véhicule</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Locations</h1>
+        <div class="container-loc">
+            <div class="container-loc__left">
+                <span>134,45 €</span>
+                <a class="container-loc__link" title="" href="">Retirer mon argent</a>
+            </div>
+            <div class="container-loc-search">
+                <div class="sandbox-container">
+                    <div class="input-daterange input-group" id="datepicker">
+                        <div class=" input-group-addon">📅</div>
+                        <input type="text" class="search-filter__datetime--input form-control" name="start" placeholder="début" />
+                        <div class="input-group-addon">📅</div>
+                        <input type="text" class="search-filter__datetime--input form-control" name="end" placeholder="fin" />
+                    </div>
+                </div>
+                <a class="container-loc__link container-loc__link--btn" title="" href="">Filtrer</a>
+            </div>
+        </div>
+
+        <div class="list mgtop-50">
+            <div class="list-nav mgbot-20 hidden-xs">
+                <div class="list-nav__title">
+                    <div class="">Véhicule</div>
+                </div>
+                <div class="list-nav__title">
+                    <div class="">Début</div>
+                </div>
+                <div class="list-nav__title">Fin</div>
+                <div class="list-nav__title">Distance</div>
+                <div class="list-nav__title">Durée</div>
+                <div class="list-nav__title">Statut</div>
+                <div class="list-nav__title">Montant</div>
+                <div class="list-nav__title">Reçu</div>
+            </div>
+
+            <div class="list-details mgtop-10 pdgbot-20">
+                <div class="list-details__type">
+                    <div class="list-details__name">
+                        <span>Renault</span>
+                        <span>Trafic</span>
+                    </div>
+                </div>
+
+                <div class="list-details__starttime">
+                    <span class="visible-xs">Débuttte :</span>
+                    <span>22 Sept.</span>
+                    <span>10h45</span>
+                </div>
+
+                <div class="list-details__endtime">
+                    <span class="visible-xs">Fin :</span>
+                    <span>22 Sept.</span>
+                    <span>12h45</span>
+                </div>
+
+                <div class="list-details__distance">
+                    <span class="visible-xs">Distance :</span>
+                    <span>145 km</span>
+                </div>
+
+                <div class="list-details__duration">
+                    <span class="visible-xs">Durée :</span>
+                    <span>15h45</span>
+                </div>
+
+                <div class="list-details__status">
+                    <span class="visible-xs">Statut :</span>
+                    <span>Terminée</span>
+                    <span class="blueGreen hidden-xs">Réduction</span>
+                    <span class="red hidden-xs">Total</span>
+                </div>
+
+                <div class="list-details__values">
+                    <span class="blueGreen visible-xs">Réduction :</span>
+                    <span>123,45 €</span>
+                    <hr>
+                    <span class="red visible-xs">Total :</span>
+                    <span>20 €</span>
+                    <hr>
+                    <span class="visible-xs">Montant :</span>
+                    <span>103,50 €</span>
+                </div>
+
+                <div class="list-details__link">
+                    <a href="">Télécharger<span class="visible-xs"> un reçu</span></a>
+                </div>
+            </div>
+            <div class="list-details mgtop-10 pdgbot-20">
+                <div class="list-details__type">
+                    <div class="list-details__name">
+                        <span>Renault</span>
+                        <span>Trafic</span>
+                    </div>
+                </div>
+
+                <div class="list-details__starttime">
+                    <span class="visible-xs">Début :</span>
+                    <span>22 Sept.</span>
+                    <span>10h45</span>
+                </div>
+
+                <div class="list-details__endtime">
+                    <span class="visible-xs">Fin :</span>
+                    <span>22 Sept.</span>
+                    <span>12h45</span>
+                </div>
+
+                <div class="list-details__distance">
+                    <span class="visible-xs">Distance :</span>
+                    <span>145 km</span>
+                </div>
+
+                <div class="list-details__duration">
+                    <span class="visible-xs">Durée :</span>
+                    <span>15h45</span>
+                </div>
+
+                <div class="list-details__status">
+                    <span class="visible-xs">Statut :</span>
+                    <span>Terminée</span>
+                </div>
+
+                <div class="list-details__values">
+                    <span class="visible-xs">Montant :</span>
+                    <span>103,50 €</span>
+                </div>
+
+                <div class="list-details__link">
+                    <a href="">Télécharger<span class="visible-xs"> un reçu</span></a>
+                </div>
+            </div>
+            <div class="list-details mgtop-10 pdgbot-20">
+                <div class="list-details__type">
+                    <div class="list-details__name">
+                        <span>Renault</span>
+                        <span>Trafic</span>
+                    </div>
+                </div>
+
+                <div class="list-details__starttime">
+                    <span class="visible-xs">Début :</span>
+                    <span>22 Sept.</span>
+                    <span>10h45</span>
+                </div>
+
+                <div class="list-details__endtime">
+                    <span class="visible-xs">Fin :</span>
+                    <span>22 Sept.</span>
+                    <span>12h45</span>
+                </div>
+
+                <div class="list-details__distance">
+                    <span class="visible-xs">Distance :</span>
+                    <span>145 km</span>
+                </div>
+
+                <div class="list-details__duration">
+                    <span class="visible-xs">Durée :</span>
+                    <span>15h45</span>
+                </div>
+
+                <div class="list-details__status">
+                    <span class="visible-xs">Statut :</span>
+                    <span>Terminée</span>
+                </div>
+
+                <div class="list-details__values">
+                    <span class="visible-xs">Montant :</span>
+                    <span>103,50 €</span>
+                </div>
+
+                <div class="list-details__link">
+                    <a href="">Télécharger<span class="visible-xs"> un reçu</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/lib/jquery3.2.1.min.js"></script>
+    <script src="src/js/lib/bootstrap-datepicker.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
